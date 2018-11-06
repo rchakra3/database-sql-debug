@@ -101,7 +101,7 @@ func ensureStoredProcsExist(db *sql.DB) error {
 
 func getCount(db *sql.DB, key string) (uint32, error) {
 	tsql := `declare @Count bigint;
-			exec dbo.GetCount2 @key, @Count OUTPUT;
+			exec dbo.GetCount @key, @Count OUTPUT;
 			SELECT @COUNT;`
 
 	var Count uint32
