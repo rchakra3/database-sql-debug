@@ -19,6 +19,16 @@ type Config struct {
 	Database string `json:"database"`
 }
 
+var (
+	conf = &Config{
+		Server:   "",
+		Port:     1433,
+		Password: "",
+		Database: "",
+		User:     "",
+	}
+)
+
 const (
 	CreateSessionIDCountTable = `If OBJECT_ID('IDCount') is null 
 	CREATE TABLE IDCount(
@@ -33,16 +43,6 @@ const (
 	`
 
 	RPS = 2000
-)
-
-var (
-	conf = &Config{
-		Server:   "",
-		Port:     1433,
-		Password: "",
-		Database: "",
-		User:     "",
-	}
 )
 
 func main() {
