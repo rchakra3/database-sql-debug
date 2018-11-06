@@ -1,0 +1,9 @@
+# cloud.google.com/go v0.32.0
+cloud.google.com/go/civil
+# github.com/denisenkom/go-mssqldb v0.0.0-20181014144952-4e0d7dc8888f
+github.com/denisenkom/go-mssqldb
+github.com/denisenkom/go-mssqldb/internal/cp
+# github.com/satori/go.uuid v1.2.0
+github.com/satori/go.uuid
+# golang.org/x/crypto v0.0.0-20181030102418-4d3f4d9ffa16
+golang.org/x/crypto/md4
